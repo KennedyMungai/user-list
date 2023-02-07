@@ -19,13 +19,18 @@ const AddUser = (props) =>
     console.log(enteredUsername)
   }
 
+  const ageChangeHandler = (e) => 
+  {
+    setEnteredAGe(e.target.value)
+  }
+
   return (
     <Card className={classes.input}>
       <form action="" onSubmit={addUserHandler}>
         <label htmlFor="username">Username</label>
         <input type="text" name="Username" id="username" onChange={usernameChangeHandler} value={enteredUsername} />
         <label htmlFor="age">Age (Years)</label>
-        <input type="number" name="userage" id="age" />
+        <input type="number" name="userage" id="age" onChange={addUserHandler} value={enteredAGe} />
         <Button
           // className={ }
           type='submit'
