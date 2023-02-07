@@ -8,13 +8,15 @@ const AddUser = (props) =>
   }
 
   return (
-    <form action="" onSubmit={addUserHandler}>
-      <label htmlFor="username">Username</label>
-      <input type="text" name="Username" id="username" />
-      <label htmlFor="age">Age (Years)</label>
-      <input type="number" name="userage" id="age" />
-      <button type="submit">Add User</button>
-    </form>
+    <Card>
+      <form action="" onSubmit={addUserHandler}>
+        <label htmlFor="username">Username</label>
+        <input type="text" name="Username" id="username" />
+        <label htmlFor="age">Age (Years)</label>
+        <input type="number" name="userage" id="age" />
+        <button type="submit">Add User</button>
+      </form>
+    </Card>
   )
 };
 
