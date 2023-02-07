@@ -15,7 +15,7 @@ const AddUser = (props) =>
     e.preventDefault();
     console.log(enteredUsername + ' ' + enteredAge)
     setEnteredUsername('')
-    setEnteredAge(0)
+    setEnteredAge()
   }
 
   const usernameChangeHandler = (e) => 
