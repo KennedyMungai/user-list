@@ -6,7 +6,7 @@ import classes from './AddUser.module.css'
 const AddUser = (props) =>
 {
   const [enteredUsername, setEnteredUsername] = useState('')
-  const [enteredAGe, setEnteredAGe] = useState(0)
+  const [enteredAge, setEnteredAge] = useState(0)
 
   const addUserHandler = (e) =>
   {
@@ -21,7 +21,8 @@ const AddUser = (props) =>
 
   const ageChangeHandler = (e) => 
   {
-    setEnteredAGe(e.target.value)
+    setEnteredAge(e.target.value)
+    console.log(enteredAge)
   }
 
   return (
@@ -30,7 +31,7 @@ const AddUser = (props) =>
         <label htmlFor="username">Username</label>
         <input type="text" name="Username" id="username" onChange={usernameChangeHandler} value={enteredUsername} />
         <label htmlFor="age">Age (Years)</label>
-        <input type="number" name="userage" id="age" onChange={addUserHandler} value={enteredAGe} />
+        <input type="number" name="userage" id="age" onChange={addUserHandler} value={enteredAge} />
         <Button
           // className={ }
           type='submit'
