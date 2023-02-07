@@ -16,13 +16,11 @@ const AddUser = (props) =>
   const usernameChangeHandler = (e) => 
   {
     setEnteredUsername(e.target.value)
-    console.log(enteredUsername)
   }
 
   const ageChangeHandler = (e) => 
   {
     setEnteredAge(e.target.value)
-    console.log(enteredAge)
   }
 
   return (
