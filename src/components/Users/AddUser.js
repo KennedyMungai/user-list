@@ -6,6 +6,7 @@ const AddUser = (props) => {
     <input type="text" name="Username" id="username" />
     <label htmlFor="age">Age (Years)</label>
     <input type="number" name="userage" id="age" />
+    <button type="submit">Add User</button>
   </form>;
 };
 
