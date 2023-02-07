@@ -35,7 +35,7 @@ const AddUser = (props) =>
           // className={ }
           type='submit'
         >
-          Add Age
+          Add User
         </Button>
       </form>
     </Card>
