@@ -1,7 +1,7 @@
 import React from "react";
 
 const AddUser = (props) => {
-  <form action="">
+  <form action="" onSubmit={addUserHandler}>
     <label htmlFor="username">Username</label>
     <input type="text" name="Username" id="username" />
     <label htmlFor="age">Age (Years)</label>
