@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './Button.module.css'
 
-const Button = () =>
+const Button = (props) =>
 {
     return (
         <div>Button</div>
