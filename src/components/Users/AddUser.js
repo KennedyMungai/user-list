@@ -31,7 +31,7 @@ const AddUser = (props) =>
         <label htmlFor="username">Username</label>
         <input type="text" name="Username" id="username" onChange={usernameChangeHandler} value={enteredUsername} />
         <label htmlFor="age">Age (Years)</label>
-        <input type="number" name="userage" id="age" onChange={addUserHandler} value={enteredAge} />
+        <input type="number" name="userage" id="age" onChange={ageChangeHandler} value={enteredAge} />
         <Button
           // className={ }
           type='submit'
@@ -40,7 +40,7 @@ const AddUser = (props) =>
             console.log("I've been pressed")
           }}
         >
-          Add Button
+          Add Age
         </Button>
       </form>
     </Card>
