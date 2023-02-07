@@ -11,6 +11,7 @@ const AddUser = (props) =>
   const addUserHandler = (e) =>
   {
     e.preventDefault();
+    console.log(enteredUsername + ' ' + enteredAge)
   }
 
   const usernameChangeHandler = (e) => 
@@ -33,10 +34,6 @@ const AddUser = (props) =>
         <Button
           // className={ }
           type='submit'
-          onClick={() => 
-          {
-            console.log("I've been pressed")
-          }}
         >
           Add Age
         </Button>
