@@ -8,6 +8,8 @@ const AddUser = (props) =>
   const [enteredUsername, setEnteredUsername] = useState('')
   const [enteredAge, setEnteredAge] = useState()
 
+  const invalid = true
+
   const addUserHandler = (e) =>
   {
     e.preventDefault();
