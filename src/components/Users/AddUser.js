@@ -8,7 +8,7 @@ const AddUser = (props) =>
   const [enteredUsername, setEnteredUsername] = useState('')
   const [enteredAge, setEnteredAge] = useState()
 
-  const invalid = true
+  let invalid = true
 
   const addUserHandler = (e) =>
   {
@@ -20,7 +20,16 @@ const AddUser = (props) =>
 
   const usernameChangeHandler = (e) => 
   {
-    setEnteredUsername(e.target.value)
+    if (e.target.value.trim().length === 0)
+    {
+      invalid = true
+    }
+    else
+    {
+      invalid = false
+    }
+
+    !invalid && setEnteredUsername(e.target.value)
   }
 
   const ageChangeHandler = (e) => 
