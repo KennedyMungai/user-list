@@ -17,7 +17,16 @@ const AddUser = (props) =>
         <input type="text" name="Username" id="username" />
         <label htmlFor="age">Age (Years)</label>
         <input type="number" name="userage" id="age" />
-        <Button />
+        <Button
+          // className={ }
+          type='submit'
+          onClick={() => 
+          {
+            console.log("I've been pressed")
+          }}
+        >
+          Add Button
+        </Button>
       </form>
     </Card>
   )
