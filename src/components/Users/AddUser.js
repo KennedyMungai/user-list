@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "../UI/Button";
 import Card from "../UI/Card";
 import classes from './AddUser.module.css'
+import UsersList from "./UsersList";
 
 const AddUser = (props) =>
 {
@@ -45,6 +46,8 @@ const AddUser = (props) =>
           Add User
         </Button>
       </form>
+
+      <UsersList />
     </Card>
   )
 };
