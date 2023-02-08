@@ -16,6 +16,12 @@ const AddUser = (props) =>
 
     if (enteredUsername.trim().length === 0 || +enteredAge <= 0 || enteredAge.trim().length === 0)
     {
+      setError(
+        {
+          title: 'Invalid Input',
+          message: 'Please enter a valid name and age (non-empty values)'
+        }
+      )
       return;
     }
 
@@ -36,7 +42,7 @@ const AddUser = (props) =>
 
   return (
     <div>
-      <ErrorModal title='An error occurred!' message='There was a problem when adding the user' />
+      {error && <ErrorModal title='An error occurred!' message='There was a problem when adding the user' />}
       <Card className={classes.input}>
         <form action="" onSubmit={addUserHandler}>
           <label htmlFor="username">Username</label>
