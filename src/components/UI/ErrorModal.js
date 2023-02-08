@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import Card from './Card'
+import classes from './ErrorModal.module.css'
 
 const ErrorModal = (props) =>
 {
