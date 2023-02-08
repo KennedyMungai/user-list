@@ -16,7 +16,7 @@ function App()
 
   return (
     <div>
-      <AddUser onAddUser={ } />
+      <AddUser onAddUser={addUserHandler} />
       <UsersList users={[]} />
     </div>
   )
