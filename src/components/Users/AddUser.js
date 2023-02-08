@@ -6,7 +6,7 @@ import classes from './AddUser.module.css'
 const AddUser = (props) =>
 {
   const [enteredUsername, setEnteredUsername] = useState('')
-  const [enteredAge, setEnteredAge] = useState()
+  const [enteredAge, setEnteredAge] = useState(0)
 
   let invalid = true
 
@@ -15,21 +15,12 @@ const AddUser = (props) =>
     e.preventDefault();
     console.log(enteredUsername + ' ' + enteredAge)
     setEnteredUsername('')
-    setEnteredAge()
+    setEnteredAge(0)
   }
 
   const usernameChangeHandler = (e) => 
   {
-    if (e.target.value.trim().length === 0)
-    {
-      invalid = true
-    }
-    else
-    {
-      invalid = false
-    }
-
-    !invalid && setEnteredUsername(e.target.value)
+    setEnteredUsername(e.target.value)
   }
 
   const ageChangeHandler = (e) => 
