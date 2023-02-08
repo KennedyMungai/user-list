@@ -7,10 +7,14 @@ const ErrorModal = (props) =>
     return (
         <Card>
             <header>
-                <h2></h2>
+                <h2>
+                    {props.title}
+                </h2>
             </header>
             <div>
-                <p></p>
+                <p>
+                    {props.message}
+                </p>
             </div>
             <footer>
                 <Button>Okay</Button>
