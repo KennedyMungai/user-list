@@ -6,7 +6,7 @@ import classes from './AddUser.module.css'
 const AddUser = (props) =>
 {
   const [enteredUsername, setEnteredUsername] = useState('')
-  const [enteredAge, setEnteredAge] = useState(0)
+  const [enteredAge, setEnteredAge] = useState('')
 
   const addUserHandler = (e) =>
   {
@@ -19,7 +19,7 @@ const AddUser = (props) =>
 
     console.log(enteredUsername + ' ' + enteredAge)
     setEnteredUsername('')
-    setEnteredAge(0)
+    setEnteredAge('')
   }
 
   const usernameChangeHandler = (e) => 
