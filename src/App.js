@@ -4,6 +4,8 @@ import UsersList from "./components/Users/UsersList";
 
 function App()
 {
+  const [usersList, setUsersList] = useState([])
+
   return (
     <div>
       <AddUser />
