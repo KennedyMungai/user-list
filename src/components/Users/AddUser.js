@@ -13,6 +13,12 @@ const AddUser = (props) =>
   const addUserHandler = (e) =>
   {
     e.preventDefault();
+
+    if (enteredUsername.trim().length === 0 || enteredAge.trim() <= 0)
+    {
+      return;
+    }
+
     console.log(enteredUsername + ' ' + enteredAge)
     setEnteredUsername('')
     setEnteredAge(0)
