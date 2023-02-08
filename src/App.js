@@ -10,7 +10,7 @@ function App()
   {
     setUsersList((prevUsersList) =>
     {
-      return [...prevUsersList, { uName, uAge }]
+      return [...prevUsersList, { name: uName, age: uAge }]
     })
   }
 
