@@ -13,7 +13,7 @@ const ErrorModal = (props) =>
                 <p></p>
             </div>
             <footer>
-
+                <Button>Okay</Button>
             </footer>
         </Card>
     )
